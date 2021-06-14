@@ -1,0 +1,18 @@
+// Componants for when they are needed.
+(component NavBar ()
+    (div class="navbar banner"
+        (div class="navbar-brand"
+            (a class="navbar-item" href="https://booplabs.github.io" (img src="./assets/logos/logo.png"))
+        (div class="navbar-start"
+            (a class="navbar-item has-text-white navlink" href="./about" "About us")
+            (a class="navbar-item has-text-white navlink" href="./browser" "Boop! Browser")
+            (a class="navbar-item has-text-white navlink" href="./fipkg" "FiPKG")))))
+
+(component Footer ()
+    (footer class="footer"
+        (p "&copy; Boop! Labs")
+        (p "Social: " (a class="has-text-info" href="https://discord.gg/22HkuNHs" target="_blank" "Discord") " " (a class="has-text-info" href="https://twitter.com/Boop_Labs" target="_blank" "Twitter"))))
+
+// Export Componants
+(export (NavBar))
+(export (Footer))
