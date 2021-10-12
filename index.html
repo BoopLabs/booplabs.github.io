@@ -22,12 +22,17 @@
                 </div>
             </div>
         </div>
-     <canvas id="gradient-canvas" data-transition-in>
-        </canvas>
+    <script>
     import { Gradient } from './Gradient.js'
   
           // Create your instance
           const gradient = new Gradient()
+  
+          // Call `initGradient` with the selector to your canvas
+          gradient.initGradient('#gradient-canvas')
+  </script>
+     <canvas id="gradient-canvas" data-transition-in>
+        </canvas>
   
           // Call `initGradient` with the selector to your canvas
           gradient.initGradient('#gradient-canvas')
